@@ -32,5 +32,22 @@
     </dependencies>
 
     <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
+
+    <scm>
+        <developerConnection>scm:git:https://github.com/ivvve/devson-petclinic.git</developerConnection>
+    </scm>
 </project>
