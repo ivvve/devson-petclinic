@@ -5,8 +5,7 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @Getter
-public class Person {
+public class Person extends BaseEntity {
     private String firstName;
     private String lastName;
-
 }
